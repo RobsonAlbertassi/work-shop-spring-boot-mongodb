@@ -14,15 +14,17 @@ public class User implements Serializable{
 	private String id;
 	private String name;
 	private String email;
+	private Integer age;
 	
 	public User() {
 	}
-
-	public User(String id, String name, String email) {
+	
+	public User(String id, String name, String email, Integer age) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
+		this.age = age;
 	}
 
 	public String getId() {
@@ -47,6 +49,15 @@ public class User implements Serializable{
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
 	}
 
 	@Override
